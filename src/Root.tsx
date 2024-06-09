@@ -5,7 +5,7 @@ export const Root = (): JSX.Element => {
   
 
   if (pathname === '/') {
-    return <Navigate to='/dashboard' />;
+    return <Navigate to='/Home' />;
   }
 
   return (

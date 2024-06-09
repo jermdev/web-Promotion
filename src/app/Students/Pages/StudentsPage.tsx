@@ -1,6 +1,6 @@
 
  
-export const FriendsPage = () => {
+export const StudentsPages = () => {
     return ( 
         <>  
             <div className="container">

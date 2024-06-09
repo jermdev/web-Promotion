@@ -1,6 +1,7 @@
 import { Root } from "@/Root.tsx";
-import { Dashboard } from "@/app/pages/Dashboard";
-import { FriendsPage } from "@/app/pages/FriendsPage";
+import { Dashboardlayout } from "@/app/Dashboard/Pages";
+import { StudentsPages } from "@/app/Students/Pages";
+import { HomePage } from "@/app/Home/Pages";
 import { createBrowserRouter } from "react-router-dom";
 
 
@@ -10,14 +11,20 @@ export const router = createBrowserRouter([
         element: <Root />,
         children: [
             {
-                path: 'dashboard',
-                element: <Dashboard />
+                path: '/',
+                element: <Dashboardlayout />,
+                children: [
+                    {
+                        path: 'Home',
+                        element: <HomePage />
+                    },    
+                    {
+                        path: 'students',
+                        element: <StudentsPages />
+        
+                    }
+                ]
             },
-            {
-                path: 'alumnos',
-                element: <FriendsPage /> 
-
-            }
 
         ]
     }
