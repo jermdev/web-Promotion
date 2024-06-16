@@ -1,14 +1,12 @@
+import { CardLayout } from "@/components/elements/CardLayout"
 
  
-export const StudentsPages = () => {
+export const StudentsPages = ():JSX.Element => {
     return ( 
         <>  
-            <div className="container">
-
-            <header>
-                <h1 className="">FriendsPage</h1>
-            </header>
-            </div>
+            <CardLayout>
+                <h1>Lista de amigos</h1>
+            </CardLayout>
         </>
      );
 }
