@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { ToggleThemeButton } from "./ToggleThemeButton";
  
 export const NavBar = (): JSX.Element => {
     return (
@@ -7,9 +8,11 @@ export const NavBar = (): JSX.Element => {
             
             <div>
 
-                <header className="flex justify-center mt-1 bor">
+                <header className="flex justify-center mt-1">
                     <h1>Promocion 5C JESUS - SE</h1>
                 </header>
+
+                <ToggleThemeButton />
 
                 <nav className="flex justify-around my-1">
 

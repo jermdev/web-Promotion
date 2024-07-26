@@ -2,12 +2,12 @@ import { ReactNode } from "react";
 
 interface CardLayoutProps {
     children: ReactNode;
-    claseName?: string;
+    className?: string;
 }
 
-export const CardLayout = ({children, claseName}: CardLayoutProps): JSX.Element => {
+export const CardLayout = ({children, className}: CardLayoutProps): JSX.Element => {
     return ( 
-        <div className={`container bg-white shadow-lg rounded-lg overflow-hidden my-4  ${claseName}`}>
+        <div className={`container bg-secondary shadow-lg rounded-lg overflow-hidden my-4  ${className}`}>
             {children}
         </div>
     );
