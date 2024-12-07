@@ -7,11 +7,9 @@ export const ToggleThemeButton = (): JSX.Element => {
     useEffect(() => {
         
         if (localStorage.theme === 'dark'  ) {
-            document.documentElement.classList.add('dark');         
-            document.documentElement.classList.add('stylesElementsDark');         
+            document.documentElement.classList.add('dark');      
         } else {
             document.documentElement.classList.remove('dark');
-            document.documentElement.classList.remove('stylesElementsDark');
         }
 
     }, [darkMode]);
@@ -28,7 +26,7 @@ export const ToggleThemeButton = (): JSX.Element => {
     };
 
     return (
-        <button onClick={toggleDarkMode} className="w-full hover:bg-slate-600">
+        <button onClick={toggleDarkMode} className="w-full hover:bg-primary-2000">
             { localStorage.theme || 'light' }
         </button>
     )

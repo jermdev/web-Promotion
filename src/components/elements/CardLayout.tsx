@@ -7,7 +7,7 @@ interface CardLayoutProps {
 
 export const CardLayout = ({children, className}: CardLayoutProps): JSX.Element => {
     return ( 
-        <div className={`container bg-secondary shadow-lg rounded-lg overflow-hidden my-4  ${className}`}>
+        <div className={`container bg-secondary shadow-lg rounded-lg overflow-hidden my-4 dark:bg-darkMode-background ${className}`}>
             {children}
         </div>
     );

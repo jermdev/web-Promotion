@@ -8,6 +8,6 @@ export const StudentsPages = ():JSX.Element => {
                 <h1>Lista de amigos</h1>
             </CardLayout>
         </>
-     );
+    );
 }
  

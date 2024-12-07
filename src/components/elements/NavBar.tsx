@@ -4,7 +4,7 @@ import { ToggleThemeButton } from "./ToggleThemeButton";
 export const NavBar = (): JSX.Element => {
     return (
 
-        <div className="container text-slate-100 flex justify-center h-full bg-slate-500 rounded-bl-lg rounded-br-lg mb-2">
+        <div className="container text-slate-100 flex justify-center h-full bg-primary rounded-bl-lg rounded-br-lg mb-2">
             
             <div>
 
